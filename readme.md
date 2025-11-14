@@ -1,8 +1,8 @@
-# Documentação do projeto.
+# Documentação do Projeto
 
 ### Especificação:
 
-Esta é a aplicação de um banco fictício, que contém um CRUD feito em Java com Spring Boot.
+Esta é a aplicação de um banco fictício, que contém um CRUD feito em Java com Spring Boot e outras tecnologias.
 
 - Projeto feito com Maven.
 - JUnit para testes unitários.
