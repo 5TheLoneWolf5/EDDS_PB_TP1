@@ -15,8 +15,21 @@ public class Conta {
     private String nome;
     private Double saldo;
 
-    @Override
+    public Conta(String nome, Double saldo) {
+    	this.nome = nome;
+    	this.saldo = saldo;
+	}
+
+	@Override
     public String toString() {
         return id + " - " + nome + " - " + saldo;
     }
+	
+	public String getNome() {
+		return this.nome;
+	}
+
+	public void setSaldo(Double saldo) {
+		this.saldo = saldo;
+	}
 }

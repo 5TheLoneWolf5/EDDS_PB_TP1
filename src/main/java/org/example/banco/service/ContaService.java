@@ -36,8 +36,7 @@ public class ContaService {
         return contaRepository.findById(id).get();
     }
 
-    public void incluirContaDb(String nome, Double saldo) {
-        Conta conta = new Conta(null, nome, saldo);
+    public void incluirContaDb(Conta conta) {
         contaRepository.save(conta);
     }
 }
