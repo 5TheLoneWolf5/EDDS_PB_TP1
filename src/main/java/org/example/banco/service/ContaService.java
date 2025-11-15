@@ -4,6 +4,8 @@ import org.example.banco.repository.ContaRepository;
 import org.springframework.stereotype.Service;
 import org.example.banco.entity.Conta;
 import java.util.List;
+import java.util.Optional;
+
 
 @Service
 public class ContaService {
@@ -13,15 +15,14 @@ public class ContaService {
         this.contaRepository = contaRepository;
     }
 
-    public void alterarConta(Long id, Double saldo) {
-        try {
-            Conta conta = contaRepository.findById(id).get();
+    public void alterarSaldoConta(Long id, Double saldo) throws IllegalArgumentException {
+    	if (saldo > 0) {
+    		Conta conta = contaRepository.findById(id).get();
             conta.setSaldo(saldo);
             contaRepository.save(conta);
-        }
-        catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
+    	} else {
+    		throw new IllegalArgumentException("Saldo deve ser maior que 0.");
+    	}
     }
 
     public void excluirContaDb(Long id) {
@@ -32,8 +33,8 @@ public class ContaService {
         return contaRepository.findAll();
     }
 
-    public Conta consultarContaDb(Long id) {
-        return contaRepository.findById(id).get();
+    public Optional<Conta> consultarContaDb(Long id) {
+        return contaRepository.findById(id);
     }
 
     public void incluirContaDb(Conta conta) {
