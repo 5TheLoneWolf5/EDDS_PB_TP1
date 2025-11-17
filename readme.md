@@ -20,6 +20,14 @@ R -> Remover uma conta via ID.
 - Lombok para automação de código boilerplate.
 
 ### Cobertura de testes:
-#### Objetivo: 80%.
+#### Objetivo: 80% (alcançado).
 
 ![Cobertura JaCoCo](https://github.com/5TheLoneWolf5/EDDS_PB_TP1/blob/main/jacoco_coverage.jpg?raw=true)
+
+### Gráfico de Causa e Efeito do Saldo:
+
+![Gráfico de Causa e Efeito do Saldo](https://github.com/5TheLoneWolf5/EDDS_PB_TP1/blob/main/grafico_causa_efeito_saldo.jpg?raw=true)
+
+### Tabela de Decisão do Saldo:
+
+![Tabela de Decisão do Saldo](https://github.com/5TheLoneWolf5/EDDS_PB_TP1/blob/main/tabela_decisao_saldo.jpg?raw=true)
