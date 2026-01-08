@@ -11,6 +11,7 @@ import lombok.*;
 //@AllArgsConstructor
 //@Data
 public class Conta {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -37,6 +38,10 @@ public class Conta {
 	public Double getSaldo() {
 		return this.saldo;
 	}
+
+    public Long getId() { return id; }
+
+    public void setId(Long id) { this.id = id; }
 
 	public void setSaldo(Double saldo) {
 		this.saldo = saldo;

@@ -39,7 +39,7 @@ public class CrudT1Application implements CommandLineRunner {
     }
 
 //    public void alterarSaldo() {
-//        contaService.alterarConta(2L, 150D);
+//        contaService.alterarSaldoConta(2L, 150D);
 //    }
 //
 //    public void consultarConta() {

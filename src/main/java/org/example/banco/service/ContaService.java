@@ -9,7 +9,7 @@ import java.util.Optional;
 
 @Service
 public class ContaService {
-    private ContaRepository contaRepository;
+    private final ContaRepository contaRepository;
 
     public ContaService(ContaRepository contaRepository) {
         this.contaRepository = contaRepository;
