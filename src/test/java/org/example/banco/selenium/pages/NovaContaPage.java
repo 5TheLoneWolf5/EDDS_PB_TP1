@@ -1,9 +1,8 @@
-package org.example.banco.selenium.pagesLogin;
+package org.example.banco.selenium.pages;
 
 import org.example.banco.selenium.core.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 public class NovaContaPage extends BasePage {
     private static final String url = "http://localhost:5173/contas/new";

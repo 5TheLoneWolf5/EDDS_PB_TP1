@@ -1,7 +1,6 @@
 package org.example.banco.controller;
 
 import org.example.banco.entity.Conta;
-import org.example.banco.repository.ContaRepository;
 import org.example.banco.service.ContaService;
 import org.springframework.web.bind.annotation.*;
 

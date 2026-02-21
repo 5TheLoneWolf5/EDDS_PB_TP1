@@ -3,7 +3,6 @@ package org.example.banco.entity;
 import java.util.Objects;
 
 import jakarta.persistence.*;
-import lombok.*;
 
 @Entity
 @Table(name="conta")
