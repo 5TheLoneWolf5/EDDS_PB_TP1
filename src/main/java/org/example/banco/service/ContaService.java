@@ -21,6 +21,7 @@ public class ContaService {
             conta.setSaldo(saldo);
             contaRepository.save(conta);
     	} else {
+            // Fail early.
     		throw new IllegalArgumentException("Saldo deve ser maior que 0.");
     	}
     }
