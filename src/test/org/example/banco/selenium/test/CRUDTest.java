@@ -1,9 +1,9 @@
 package org.example.banco.selenium.test;
 
 import org.example.banco.selenium.core.BaseTest;
-import org.example.banco.selenium.pagesLogin.AlterarContaPage;
-import org.example.banco.selenium.pagesLogin.ContasPage;
-import org.example.banco.selenium.pagesLogin.VisualizarContaPage;
+import org.example.banco.selenium.pages.AlterarContaPage;
+import org.example.banco.selenium.pages.ContasPage;
+import org.example.banco.selenium.pages.VisualizarContaPage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
