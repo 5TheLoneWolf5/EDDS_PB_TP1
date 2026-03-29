@@ -6,6 +6,7 @@ import org.example.banco.entity.Conta;
 import java.util.List;
 import java.util.Optional;
 
+// Fail early aplicado no back-end e fail gracefully no front-end (com mensagens claras e seguras).
 
 @Service
 public class ContaService {
@@ -21,6 +22,7 @@ public class ContaService {
             conta.setSaldo(saldo);
             contaRepository.save(conta);
     	} else {
+            // Fail early.
     		throw new IllegalArgumentException("Saldo deve ser maior que 0.");
     	}
     }

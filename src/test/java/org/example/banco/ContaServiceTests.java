@@ -30,7 +30,7 @@ import net.jqwik.api.constraints.LongRange;
 import net.jqwik.api.lifecycle.BeforeTry;
 
 @ExtendWith(MockitoExtension.class)
-class ContaServiceTests {
+public class ContaServiceTests {
 
 	@Mock
 	private ContaRepository contaRepository;
