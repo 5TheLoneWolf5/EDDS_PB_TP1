@@ -27,11 +27,8 @@ public abstract class BaseTest {
     private ChromeOptions configurarChrome() {
         ChromeOptions options = new ChromeOptions();
 
-        options.addArguments("--headless=new");
-        // options.addArguments("--incognito");
-        options.addArguments("--window-size=1280,800");
-        // options.addArguments("--disable-notifications");
-        // options.addArguments("--lang=pt-BR");
+        options.addArguments("--headless");
+        options.addArguments("--disable-notifications");
         return options;
     }
 }

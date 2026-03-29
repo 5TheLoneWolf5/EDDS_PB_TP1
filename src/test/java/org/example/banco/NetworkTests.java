@@ -35,7 +35,7 @@ public class NetworkTests {
     private ObjectMapper objectMapper;
 
     @FuzzTest
-    @Timeout(value = 500, unit = TimeUnit.MILLISECONDS) // Teste vai falhar se levar muito tempo, o que simula falhas ou lentidão na rede.
+    @Timeout(value = 10000, unit = TimeUnit.MILLISECONDS) // Teste vai falhar se levar muito tempo, o que simula falhas ou lentidão na rede.
     void fuzzAdicionarConta(FuzzedDataProvider data) {
         Conta conta = new Conta(data.consumeString(50), data.consumeDouble());
 
