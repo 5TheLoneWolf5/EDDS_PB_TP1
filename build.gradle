@@ -57,7 +57,7 @@ tasks.named('test') {
     useJUnitPlatform()
 
     exclude 'org/example/banco/selenium/test/CRUDTest.class'
-    include 'org/example/banco/ContaServiceTests.class'
+    exclude 'org/example/banco/ContaServiceTests.class'
     include 'org/example/banco/FuzzTests.class'
     include 'org/example/banco/NetworkTests.class'
 

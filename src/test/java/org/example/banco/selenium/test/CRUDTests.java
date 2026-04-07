@@ -7,7 +7,7 @@ import org.example.banco.selenium.pages.VisualizarContaPage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class CRUDTest extends BaseTest {
+public class CRUDTests extends BaseTest {
 
     @Test
     public void obterListaDeContas() {
