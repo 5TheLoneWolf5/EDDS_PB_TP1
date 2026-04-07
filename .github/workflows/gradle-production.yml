@@ -48,7 +48,6 @@ jobs:
     env:
       SVC_ID: ${{ vars.RAILWAY_PRODUCTION_SERVICE_ID }}
       RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-      RAILWAY_PROJECT_ID: ${{ vars.RAILWAY_PROJECT_ID }}
     steps:
       - name: Verify context
         run: railway status
