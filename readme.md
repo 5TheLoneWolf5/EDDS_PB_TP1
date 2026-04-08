@@ -26,13 +26,12 @@ Por fim, o deploy do front-end também é realizado, acionado pelo back-end. Com
 
 ### Descrição dos ambientes de deploy e suas proteções:
 
-O ambiente de deploy não pode ser mergido sem a aprovação de um membro do repositório.
+O ambiente de deploy não pode ser mergido sem a aprovação do code owner.
 Além disso, é obrigatório o escaneamento do código estático através do CodeQL. Se houver erros, o código não poderá ser mergido. 
 
 ### Explicação das estratégias de testes aplicadas, incluindo pós-deploy:
 
-Durante o projeto, foram utilizados testes unitários (com Mockito para mockar o banco de dados em desenvolvimento, Jqwik para testes baseados em propriedade, etc.).
-Também selenium para testes de funcionalidade envolvendo interface gráfica. Testes SAST CodeQL. Testes DAST com ZAP pós-deploy.
+Durante o projeto, foram utilizados testes unitários (com Mockito para mockar o banco de dados em desenvolvimento, Jqwik para testes baseados em propriedade, etc.), Selenium para testes de funcionalidade envolvendo interface gráfica, testes SAST com CodeQL e testes DAST com ZAP pós-deploy.
 
 ### Especificação:
 
