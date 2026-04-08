@@ -9,7 +9,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/contas-banco")
-@CrossOrigin(origins = "http://localhost:5173", maxAge = 3600)
+@CrossOrigin(origins = {"http://localhost:5173", "https://eddspbtp3-production.up.railway.app"}, maxAge = 3600)
 public class ContaController {
 
     private final ContaService contaService;

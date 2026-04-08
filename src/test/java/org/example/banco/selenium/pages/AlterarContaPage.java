@@ -16,7 +16,7 @@ public class AlterarContaPage extends BasePage {
     public AlterarContaPage(WebDriver driver, Long id) {
         super(driver);
         this.id = id;
-        this.URL = "http://localhost:5173/contas/" + id + "/edit";
+        this.URL = System.getenv("FRONT_END_URL") + "/contas/" + id + "/edit";
     }
 
     public AlterarContaPage abrir(){

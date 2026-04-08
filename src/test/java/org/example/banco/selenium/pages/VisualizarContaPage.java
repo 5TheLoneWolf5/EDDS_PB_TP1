@@ -15,7 +15,7 @@ public class VisualizarContaPage extends BasePage {
     public VisualizarContaPage(WebDriver driver, Long id) {
         super(driver);
         this.id = id;
-        this.URL = "http://localhost:5173/contas/" + id;
+        this.URL = System.getenv("FRONT_END_URL") + "/contas/" + id;
     }
     public VisualizarContaPage abrir(){
         driver.get(URL);
