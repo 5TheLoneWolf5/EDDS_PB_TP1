@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.util.List;
 
 public class ContasPage extends BasePage {
-    private static final String URL = "http://localhost:5173/contas";
+    private static final String URL = System.getenv("FRONT_END_URL") + "/contas";
     private final By containerContas =  By.xpath("//div[@class='MuiDataGrid-virtualScrollerRenderZone css-11dqcl8-MuiDataGrid-virtualScrollerRenderZone']");
     private final By idContaLinha =  By.xpath("//div[@class='MuiDataGrid-cell MuiDataGrid-cell--textLeft']");
     private final By caixaConfirmacao = By.xpath("//div[@class='MuiAlert-message css-zioonp-MuiAlert-message']");
