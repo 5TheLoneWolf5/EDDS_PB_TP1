@@ -67,6 +67,23 @@ tasks.named('test') {
     }
 }
 
+tasks.register('seleniumTest', Test) {
+    group = 'verification'
+    description = 'Selenium E2E tests against the production URL'
+
+    useJUnitPlatform()
+
+    include 'org/example/banco/selenium/test/CRUDTest.class'
+
+    systemProperty "baseurl", System.getProperty("baseurl", "https://eddspbtp3-production.up.railway.app")
+
+    testLogging {
+        events = ["passed", "skipped", "failed"]
+        showStandardStreams = true
+        exceptionFormat = "full"
+    }
+}
+
 bootJar {
     mainClass = 'org.example.banco.CrudT1Application'
 }
