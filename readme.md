@@ -5,9 +5,9 @@
 
 ### Deployments do back-end (utilizando Railway e GitHub):
 
-- Links para os deployments de:
-    - [Production](https://railway.com/project/cbab6fb6-bce4-439a-9689-46d5348a25d9?environmentId=2b5d75d2-53cf-4e9a-bc84-9f8738ee9d0d) (produção)
-    - [Dev](https://railway.com/project/cbab6fb6-bce4-439a-9689-46d5348a25d9?environmentId=112ca1c4-cea4-44e5-8fc3-e94aa91e8a93) (desenvolvimento e testes)
+- Links para deployments de:
+    - [Production](https://railway.com/project/cbab6fb6-bce4-439a-9689-46d5348a25d9/settings?environmentId=2b5d75d2-53cf-4e9a-bc84-9f8738ee9d0d) (produção)
+    - [Dev](https://railway.com/project/cbab6fb6-bce4-439a-9689-46d5348a25d9/settings?environmentId=112ca1c4-cea4-44e5-8fc3-e94aa91e8a93) (desenvolvimento e testes)
 
 ### Arquitetura final do sistema:
 
