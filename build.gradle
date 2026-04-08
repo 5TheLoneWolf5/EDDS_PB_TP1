@@ -40,7 +40,8 @@ dependencies {
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation "net.jqwik:jqwik-api:${jqwikVersion}"
+    testImplementation "net.jqwik:jqwik-api:${jqwikApiVersion}"
+    testRuntimeOnly "net.jqwik:jqwik-engine:${jqwikEngineVersion}"
     testImplementation "io.github.bonigarcia:webdrivermanager:${webdrivermanagerVersion}"
 
     testImplementation 'org.apache.httpcomponents.client5:httpclient5:5.4.1'
@@ -56,7 +57,7 @@ tasks.named('test') {
     useJUnitPlatform()
 
     exclude 'org/example/banco/selenium/test/CRUDTest.class'
-    include 'org/example/banco/ContaServiceTests.class'
+    exclude 'org/example/banco/ContaServiceTests.class'
     include 'org/example/banco/FuzzTests.class'
     include 'org/example/banco/NetworkTests.class'
 

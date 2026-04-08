@@ -6,9 +6,6 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name="conta")
-//@NoArgsConstructor
-//@AllArgsConstructor
-//@Data
 public class Conta {
 
     @Id
