@@ -68,19 +68,19 @@ jobs:
         with:
           target: ${{ vars.PRODUCTION_URL }}
 
-  front-end:
-    needs: zap_scan
-    uses: 5TheLoneWolf5/EDDS_PB_TP3/.github/workflows/main.yml@main
-    with:
-      SVC_ID: "edea5b68-73b9-4d30-ada2-f0f495bc1c4a"
-    secrets:
-      API_KEY: ${{ secrets.FRONT_END_API_KEY }}
-      RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN_FROM_BACK_TO_FRONT_END }}
+  # front-end:
+  #   needs: zap_scan
+  #   uses: 5TheLoneWolf5/EDDS_PB_TP3/.github/workflows/main.yml@main
+  #   with:
+  #     SVC_ID: "edea5b68-73b9-4d30-ada2-f0f495bc1c4a"
+  #   secrets:
+  #     API_KEY: ${{ secrets.FRONT_END_API_KEY }}
+  #     RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN_FROM_BACK_TO_FRONT_END }}
 
   selenium:
     environment: "EDDS_PB_TP1 / production"
     runs-on: ubuntu-latest
-    needs: front-end
+    needs: zap_scan
     steps:
       - uses: actions/checkout@v4
 
