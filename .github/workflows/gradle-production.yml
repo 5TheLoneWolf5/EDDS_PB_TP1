@@ -72,7 +72,7 @@ jobs:
     needs: zap_scan
     uses: 5TheLoneWolf5/EDDS_PB_TP3/.github/workflows/main.yml@main
     with:
-      SVC_ID: ${{ vars.RAILWAY_SERVICE_ID_FRONT_END }}
+      SVC_ID: "edea5b68-73b9-4d30-ada2-f0f495bc1c4a"
     secrets:
       API_KEY: ${{ secrets.FRONT_END_API_KEY }}
       RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN_FROM_BACK_TO_FRONT_END }}
