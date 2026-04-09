@@ -22,7 +22,7 @@ e podem ser observadas ao analisar a estrutura dos repositórios no GitHub.
 
 O back-end possui, quase por completo, a lógica dos workflows. Nele, testes dentro do build gradle são realizados.
 Após isso, o back-end vai para o deploy em Railway. No final, a aplicação é analisada e testada dinamicamente pelo ZAP.
-Por fim, o deploy do front-end também é realizado, acionado pelo back-end. Com isso, é possível testar a funcionalidade do sistema com o Selenium.
+Por fim, o deploy do front-end também é realizado (manualmente ou automaticamente [no próprio repositório do front-end]. Atualmente no back-end, há de ser manualmente. Contudo, já existem ideias de implementação totalmente automatizadas dentro do repositório). Com isso, é possível testar a funcionalidade do sistema com o Selenium (pós-deploy).
 
 ### Descrição dos ambientes de deploy e suas proteções:
 
