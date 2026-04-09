@@ -68,10 +68,17 @@ jobs:
         with:
           target: ${{ vars.PRODUCTION_URL }}
 
+  front-end:
+    environment: "EDDS_PB_TP1 / production"
+    needs: zap_scan
+    uses: 5TheLoneWolf5/EDDS_PB_TP3/.github/workflows/main.yml@main
+    secrets:
+      API_KEY: ${{ secrets.FRONT_END_API_KEY }}
+
   selenium:
     environment: "EDDS_PB_TP1 / production"
     runs-on: ubuntu-latest
-    needs: deploy
+    needs: front-end
     steps:
       - uses: actions/checkout@v4
 
