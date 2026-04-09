@@ -69,7 +69,6 @@ jobs:
           target: ${{ vars.PRODUCTION_URL }}
 
   front-end:
-    environment: "EDDS_PB_TP1 / production"
     needs: zap_scan
     uses: 5TheLoneWolf5/EDDS_PB_TP3/.github/workflows/main.yml@main
     secrets:
